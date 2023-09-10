@@ -1,0 +1,73 @@
+$bodyBg: #F7F4F0;
+$bannerColor: #5B10FF;
+$defaultColor: #FFFFFF;
+$headerMenuColor: #BD9FFF;
+$subtitleMenuColor: #000000;
+$lastCartBg: #02B31B;
+$footerBg: #080820;
+$footerBorderColor: #39394D;
+
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    overflow-x: hidden;
+    background-color: $bodyBg;
+    color: $defaultColor;
+}
+
+.container {
+    max-width: 1380px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.header__burger-menu {
+    width: 30px;
+    height: 23px;
+    position: relative;
+    cursor: pointer;
+     
+    span {
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: $defaultColor;
+        transition: .4s;
+
+        &:nth-child(1) {
+            top: 0;
+        }
+
+        &:nth-child(2) {
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        &:nth-child(3) {
+            bottom: 0;
+        }
+    }
+}
+
+
+body.open-mobile {
+    overflow: hidden;
+    .header__burger-menu {
+        span {
+            &:nth-child(1) {
+                transform: rotate(45deg);
+                top: 10px;
+            }
+    
+            &:nth-child(2) {
+                opacity: 0;
+            }
+    
+            &:nth-child(3) {
+                transform: rotate(-45deg);
+                bottom: 10px;
+            }
+        }
+    }
+} 

@@ -1,0 +1,83 @@
+.cake__form {
+    padding: 120px 0;
+
+    &-subtitle {
+        font-size: 40px;
+        line-height: 60px;
+        color: $subtitleMenuColor;
+        max-width: 720px;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 120px;
+        font-weight: 400;
+        margin-bottom: 60px;
+
+        span {
+            color: $bannerColor;
+            border: 1px solid $bannerColor;
+            border-radius: 5px;
+            padding-left: 6px;
+            padding-right: 4px;
+        }
+    }
+
+    form {
+        max-width: 510px;
+        margin: 0 auto;
+        font-size: 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 130px;
+
+        input {
+            outline: none;
+        }
+        
+        input[type="email"] {
+            border-radius: 4px;
+            border: 2px solid $subtitleMenuColor;
+            opacity: 0.2;
+            padding: 13px 30px 13px 20px;
+        }
+
+        input[type="submit"] {
+            padding: 13px 20px;
+            border-radius: 4px;
+            border: 2px solid $bannerColor;
+            color: $bannerColor;
+            cursor: pointer;
+        }
+    }
+
+    &-text {
+        max-width: 600px;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 60px;
+        font-size: 24px;
+        color: $subtitleMenuColor;
+
+        span {
+            color: $bannerColor;
+            border: 1px solid $bannerColor;
+            border-radius: 5px;
+            padding-left: 6px;
+            padding-right: 4px; 
+        }
+    }
+
+    &-messangers {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &-item {
+            margin-right: 60px;
+
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+    }
+}

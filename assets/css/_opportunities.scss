@@ -1,0 +1,44 @@
+.opportunities {
+    padding: 60px 0;
+    background-color: $bannerColor;
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__top {
+        margin-bottom: 60px;
+    }
+
+    &__text {
+        max-width: 720px;
+        font-size: 40px;
+        line-height: 60px;
+        color: $defaultColor;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    &__btn {
+        margin-bottom: 20px;
+        font-size: 24px;
+        color: $defaultColor;
+        display: flex;
+        align-items: center;
+        border-radius: 4px;
+        border: 2px solid $defaultColor;
+        padding: 12px 20px;
+
+        img {
+            margin-left: 57px;
+        }
+    }
+
+    &__small-text {
+        line-height: 28px;
+        opacity: 0.6;
+    }
+
+}

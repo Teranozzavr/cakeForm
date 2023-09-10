@@ -1,0 +1,77 @@
+.header {
+    padding-top: 60px;
+    z-index: 10;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+
+    .row {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo,
+    .custom-logo-link {
+        margin-right: 60px;
+        display: block;
+    }
+
+    &__menu {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-list {
+            display: flex;
+            align-items: center;
+
+            &-item,
+            .menu-item {
+                margin-right: 60px;
+
+                 &:last-of-type {
+                    margin-right: 0;
+                }
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    color: $headerMenuColor;
+
+                    img {
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+
+        &-right {
+            display: flex;
+            align-items: center;
+
+            &-pool {
+                margin-right: 20px;
+            }
+
+            &-pool-by-cake {
+                display: flex;
+                align-items: center;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                color: $defaultColor;
+
+                img {
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+
+    &__burger-menu {
+        display: none;
+    }
+}

@@ -1,0 +1,41 @@
+.benner__top {
+    min-height: 900px;
+    background-color: $bannerColor;
+    padding-top: 392px;
+    position: relative;
+
+    .row {
+        width: 100%;
+    }
+
+    &-logo {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 301px;
+    }
+
+    &-arrow {
+        position: relative;
+        right: 60px;
+    }
+
+    &-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-social {
+            display: flex;
+            align-items: center;
+
+            &-link {
+                margin-right: 30px;
+
+                &:last-of-type {
+                    margin-right: 0;
+                }
+            }
+
+        }
+    }
+}
